@@ -5,15 +5,15 @@ from shutil import copyfile
 from torch.utils.data import DataLoader
 
 from utils.ops import count_parameters
-from logger import get_logger, TensorBoardLogger
-from config import get_config_parser, device
+from dinf_grid.logger import get_logger, TensorBoardLogger
+from dinf_grid.config import get_config_parser, device
 
-from sampler import StratifiedGridSampler, DataSampler, DataandStratifiedSampler
-from boundary import Boundary
-from modules import Siren, FeatureGrid, PINN
-from loss import Loss
-from target import Target
-from test import Test
+from dinf_grid.sampler import StratifiedGridSampler, DataSampler, DataandStratifiedSampler
+from dinf_grid.boundary import Boundary
+from dinf_grid.modules import Siren, FeatureGrid, PINN
+from dinf_grid.loss import Loss
+from dinf_grid.target import Target
+from dinf_grid.test import Test
 
 def train():
     args = get_config_parser().parse_args()

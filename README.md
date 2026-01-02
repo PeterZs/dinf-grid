@@ -84,7 +84,7 @@ The codebase has the following structure:
 - [interpolation.py](modules.py): implementations of the different interpolation modules (SIREN MLP, grid-based feature interpolation, PINN).
 - [sampler.py](sampler.py): stratified grid samplers and data samplers used during training.
 - [boundary.py](boundary.py): boundary condition handling for coordinates (e.g., fixed corners, PDE boundaries).
-- [target.py](target.py): wraps analytical functions, images, and PDE problems into a common interface.
+- [dinf_grid/target.py](dinf_grid/target.py): wraps analytical functions, images, and PDE problems into a common interface.
 - [loss.py](loss.py): loss definitions for signal, gradient, Laplacian, and PDE objectives.
 - [test.py](test.py): evaluation and visualisation routines used during training and at checkpoints.
 - [neuralclothsim/](neuralclothsim): X
@@ -183,7 +183,7 @@ The following table summarises common PDE-style experiments (including gradient 
 | Helmholtz (2D wave field)          | `helmholtz`   | [grid_rbf_pde_helmholtz.ini](config/grid_rbf_pde_helmholtz.ini) |
 | Kirchhoff-Love (cloth simulation)  | `neuralclothsim` | [grid_rbf_pde_neuralclothsim.ini](config/grid_rbf_pde_neuralclothsim.ini) |
 
-Image and point-cloud paths can be controlled with the `--image_path <image_path>` and `--point_cloud_path <point_cloud_path>` arguments. For other experiment-specific configurations, see [config.py](config.py) and [target.py](target.py).
+Image and point-cloud paths can be controlled with the `--image_path <image_path>` and `--point_cloud_path <point_cloud_path>` arguments. For other experiment-specific configurations, see [dinf_grid/config.py](dinf_grid/config.py) and [dinf_grid/target.py](dinf_grid/target.py).
 
 ### Experiments with signal-based objectives
 

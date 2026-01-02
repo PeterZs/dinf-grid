@@ -4,8 +4,8 @@ import numpy as np
 from torch.utils.data import Dataset
 from typing import Any, Dict
 
-from boundary import Boundary
-from interpolation import LinearInterpolation, RBFInterpolation
+from .boundary import Boundary
+from .interpolation import LinearInterpolation, RBFInterpolation
 
 
 class SignalRepresentation(nn.Module):

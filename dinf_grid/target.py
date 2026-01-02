@@ -10,7 +10,7 @@ import skimage.data
 import trimesh
 import numpy as np
 import pysdf
-from config import device
+from .config import device
 from utils.diff_operators import jacobian
 from utils.ops import compl_div, compl_mul, gaussian
 from neuralclothsim.reference_geometry import ReferenceGeometry

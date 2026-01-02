@@ -81,10 +81,10 @@ def get_config_parser() -> configargparse.ArgumentParser:
     parser.add_argument('--advection_velocity', type=float, nargs='+', default=[0.25], help='Velocity for advection equation')
 
     # Zalesak target options
-    parser.add_argument('--zalesak_radius', type=float, default=0.5, help='Radius of the slotted disk in Zalesak\'s problem')
-    parser.add_argument('--zalesak_slot_width', type=float, default=0.1, help='Slot width of the slotted disk in Zalesak\'s problem')
-    parser.add_argument('--zalesak_slot_height', type=float, default=0.25, help='Slot height of the slotted disk in Zalesak\'s problem')
-    parser.add_argument('--zalesak_center_x', type=float, default=0.0, help='X center of the slotted disk in Zalesak\'s problem')
-    parser.add_argument('--zalesak_center_y', type=float, default=0.0, help='Y center of the slotted disk in Zalesak\'s problem')
+    parser.add_argument('--zalesak_radius', type=float, default=0.5, help="Radius of the slotted disk in Zalesak's problem")
+    parser.add_argument('--zalesak_slot_width', type=float, default=0.1, help="Slot width of the slotted disk in Zalesak's problem")
+    parser.add_argument('--zalesak_slot_height', type=float, default=0.25, help="Slot height of the slotted disk in Zalesak's problem")
+    parser.add_argument('--zalesak_center_x', type=float, default=0.0, help="X center of the slotted disk in Zalesak's problem")
+    parser.add_argument('--zalesak_center_y', type=float, default=0.0, help="Y center of the slotted disk in Zalesak's problem")
 
     return parser

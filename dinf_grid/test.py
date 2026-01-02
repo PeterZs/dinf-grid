@@ -1,18 +1,18 @@
 import math
-from typing import Tuple
+from typing import Any, Dict, Tuple, Union
 
-import numpy as np
 import torch
+import numpy as np
 import scipy.special
 
 from utils.ops import compute_psnr, compute_ssim, compute_helmholtz_error
 from utils.diff_operators import jacobian, laplacian
 from utils.data_io import generate_mesh_topology, lin2img, Mesh
-from sampler import get_mgrid
-from config import device
+from .sampler import get_mgrid
+from .config import device
 from neuralclothsim.reference_geometry import midsurface
-from logger import TensorBoardLogger
-from target import Target
+from .logger import TensorBoardLogger
+from .target import Target
 
 class Test:
     def __init__(

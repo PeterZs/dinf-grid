@@ -1,6 +1,6 @@
 import torch
 from typing import Tuple
-from target import Target
+from .target import Target
 
 class Boundary:
     def __init__(self, boundary_condition: str, coord_space: Tuple[float, ...], target: Target):

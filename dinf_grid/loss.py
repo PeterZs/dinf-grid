@@ -1,7 +1,7 @@
 import torch
 from torch.nn.functional import l1_loss, mse_loss
 from utils.diff_operators import jacobian, laplacian
-from target import Target
+from .target import Target
 
 class Loss:
     def __init__(self, loss_type: str, target: Target):
