@@ -1,0 +1,418 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "grid_lerp_signal_cubic",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "run.py",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "args": [
+                "-c", "config/analytical/grid_lerp_signal_cubic.ini",
+                "-n", "grid_lerp_signal_cubic"
+            ]
+        },
+        {
+            "name": "grid_lerp_gradient_cubic",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "run.py",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "args": [
+                "-c", "config/analytical/grid_lerp_gradient_cubic.ini",
+                "-n", "grid_lerp_gradient_cubic"
+            ]
+        },
+        {
+            "name": "grid_lerp_laplacian_cubic",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "run.py",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "args": [
+                "-c", "config/analytical/grid_lerp_laplacian_cubic.ini",
+                "-n", "grid_lerp_laplacian_cubic"
+            ]
+        },
+        {
+            "name": "grid_rbf_signal_cubic",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "run.py",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "args": [
+                "-c", "config/analytical/grid_rbf_signal_cubic.ini",
+                "-n", "grid_rbf_signal_cubic"
+            ]
+        },
+        {
+            "name": "grid_rbf_gradient_cubic",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "run.py",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "args": [
+                "-c", "config/analytical/grid_rbf_gradient_cubic.ini",
+                "-n", "grid_rbf_gradient_cubic"
+            ]
+        },
+        {
+            "name": "grid_rbf_laplacian_cubic",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "run.py",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "args": [
+                "-c", "config/analytical/grid_rbf_laplacian_cubic.ini",
+                "-n", "grid_rbf_laplacian_cubic"
+            ]
+        },
+        {
+            "name": "siren_signal_cubic",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "run.py",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "args": [
+                "-c", "config/analytical/siren_signal_cubic.ini",
+                "-n", "siren_signal_cubic"
+            ]
+        },
+        {
+            "name": "siren_gradient_cubic",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "run.py",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "args": [
+                "-c", "config/analytical/siren_gradient_cubic.ini",
+                "-n", "siren_gradient_cubic"
+            ]
+        },
+        {
+            "name": "siren_laplacian_cubic",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "run.py",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "args": [
+                "-c", "config/analytical/siren_laplacian_cubic.ini",
+                "-n", "siren_laplacian_cubic"
+            ]
+        },
+        {
+            "name": "grid_lerp_signal_image",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "run.py",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "args": [
+                "-c", "config/image_grayscale/grid_rbf_signal_image.ini",
+                "-n", "grid_lerp_signal_image",
+                "--grid_resolution", "256",
+                "--n_train_data_samples_per_dim", "256",
+                "--interpolation_type", "lerp"
+            ]
+        },
+        {
+            "name": "grid_rbf_signal_image",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "run.py",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "args": [
+                "-c", "config/image_grayscale/grid_rbf_signal_image.ini",
+                "-n", "grid_rbf_signal_image",
+                "--grid_resolution", "256",
+                "--n_train_data_samples_per_dim", "256",
+                //"--rbf_type",
+                //"inverse_quadratic"
+            ]
+        },
+        {
+            "name": "grid_rbf_gradient_image",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "run.py",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "args": [
+                "-c", "config/image_grayscale/grid_rbf_gradient_image.ini",
+                "-n", "grid_rbf_gradient_image"
+            ]
+        },
+        {
+            "name": "grid_rbf_laplacian_image",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "run.py",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "args": [
+                "-c", "config/image_grayscale/grid_rbf_laplacian_image.ini",
+                "-n", "grid_rbf_laplacian_image"
+            ]
+        },
+        {
+            "name": "siren_signal_image",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "run.py",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "args": [
+                "-c", "config/image_grayscale/siren_signal_image.ini",
+                "-n", "siren_signal_image",
+                "--n_train_data_samples_per_dim", "256",
+                "--n_test_samples_per_dim", "256"
+            ]
+        },
+        {
+            "name": "siren_gradient_image",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "run.py",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "args": [
+                "-c", "config/image_grayscale/siren_gradient_image.ini",
+                "-n", "siren_gradient_image",
+                "--n_train_data_samples_per_dim", "256"
+            ]
+        },             
+        {
+            "name": "siren_laplacian_image",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "run.py",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "args": [
+                "-c", "config/image_grayscale/siren_laplacian_image.ini",
+                "-n", "siren_laplacian_image"
+            ]
+        },
+        {
+            "name": "siren_signal_image_colour",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "run.py",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "args": [
+                "-c", "config/image_colour/siren_signal_image.ini",
+                "-n", "siren_signal_image_colour",
+                "--n_train_data_samples_per_dim", "256"
+            ]
+        },
+        {
+            "name": "siren_gradient_image_colour",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "run.py",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "args": [
+                "-c", "config/image_colour/siren_gradient_image.ini",
+                "-n", "siren_gradient_image_colour",
+                "--n_train_data_samples_per_dim", "128"
+            ]
+        },
+        {
+            "name": "siren_laplacian_image_colour",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "run.py",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "args": [
+                "-c", "config/image_colour/siren_laplacian_image.ini",
+                "-n", "siren_laplacian_image_colour",
+                "--n_train_data_samples_per_dim", "64"
+            ]
+        },
+        {
+            "name": "grid_rbf_pde_helmholtz",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "run.py",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "args": [
+                "-c", "config/grid_rbf_pde_helmholtz.ini",
+                "-n", "grid_rbf_pde_helmholtz"
+            ]
+        },
+        {
+            "name": "siren_pde_helmholtz",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "run.py",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "args": [
+                "-c", "config/siren_pde_helmholtz.ini",
+                "-n", "siren_pde_helmholtz",
+                "--n_train_stratified_samples_per_dim", "20"
+            ]
+        },
+        {
+            "name": "grid_rbf_pde_neuralclothsim",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "run.py",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "args": [
+                "-c", "config/grid_rbf_pde_neuralclothsim.ini",
+                "-n", "grid_rbf_pde_neuralclothsim"
+            ]
+        },
+        {
+            "name": "siren_pde_neuralclothsim",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "run.py",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "args": [
+                "-c", "config/siren_pde_neuralclothsim.ini",
+                "-n", "siren_pde_neuralclothsim"
+            ]
+        },
+        {
+            "name": "siren_pde_sdf",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "run.py",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "args": [
+                "-c", "config/siren_pde_sdf.ini",
+                "-n", "siren_pde_sdf",
+                "--n_train_stratified_samples_per_dim", "20",
+                "--n_test_samples_per_dim", "20"
+            ]
+        },
+        {
+            "name": "grid_rbf_pde_sdf",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "run.py",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "args": [
+                "-c", "config/grid_rbf_pde_sdf.ini",
+                "-n", "grid_rbf_pde_sdf", 
+                "--grid_resolution", "20",
+                "--n_train_stratified_samples_per_dim", "20", 
+                "--n_test_samples_per_dim", "20"
+            ]
+        },
+        {
+            "name": "siren_pde_advection",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "run.py",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "args": [
+                "-c", "config/siren_pde_advection.ini",
+                "-n", "siren_pde_advection"
+            ]
+        },
+        {
+            "name": "grid_rbf_pde_advection",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "run.py",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "args": [
+                "-c", "config/grid_rbf_pde_advection.ini",
+                "-n", "grid_rbf_pde_advection"
+            ]
+        },
+        {
+            "name": "siren_pde_heat",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "run.py",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "args": [
+                "-c", "config/siren_pde_heat.ini",
+                "-n", "siren_pde_heat"
+            ]
+        },
+        {
+            "name": "grid_rbf_pde_heat",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "run.py",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "args": [
+                "-c", "config/grid_rbf_pde_heat.ini",
+                "-n", "grid_rbf_pde_heat"
+            ]
+        },
+        {
+            "name": "siren_pde_advection_2d",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "run.py",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "args": [
+                "-c", "config/siren_pde_advection_2d.ini",
+                "-n", "siren_pde_advection_2d",
+                "--n_train_stratified_samples_per_dim", "20",
+                "--n_test_samples_per_dim", "20",
+            ]
+        },
+        {
+            "name": "siren_pde_zalesak",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "run.py",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "args": [
+                "-c", "config/siren_pde_zalesak.ini",
+                "-n", "siren_pde_zalesak",
+                "--n_train_stratified_samples_per_dim", "40",
+                "--n_test_samples_per_dim", "40",
+            ]
+        },
+        {
+            "name": "siren_signal_sdf",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "run.py",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "args": [
+                "-c", "config/siren_signal_sdf.ini",
+                "-n", "siren_signal_sdf",
+                "--n_train_stratified_samples_per_dim", "20",
+                "--n_train_data_samples_per_dim", "20", 
+                "--n_test_samples_per_dim", "20"
+            ]
+        }
+    ]
+}

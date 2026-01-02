@@ -1,0 +1,18 @@
+name: dinf-grid
+channels:
+  - conda-forge
+dependencies:
+  - python
+  - configargparse
+  - matplotlib
+  - plyfile
+  - scikit-image
+  - tensorboard
+  - tqdm
+  - trimesh
+  - pysdf
+  - pip
+  - pip:
+    - cmapy
+    - markupsafe==2.1.5
+prefix: /path/to/anaconda3/envs/dinf-grid

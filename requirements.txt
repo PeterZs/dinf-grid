@@ -1,0 +1,11 @@
+torch
+torchvision
+tqdm
+configargparse
+scikit-image
+matplotlib
+trimesh
+cmapy
+plyfile
+tensorboard
+pysdf

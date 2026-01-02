@@ -1,0 +1,6 @@
+__pycache__/*
+utils/__pycache__/*
+neuralclothsim/__pycache__/*
+logs/*
+old_logs*
+internal/
