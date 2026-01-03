@@ -2,7 +2,7 @@
 
 [![arXiv](https://img.shields.io/badge/arXiv-0000.00000-b31b1b)](https://arxiv.org/abs/0000.00000)
 [![Project Page](https://img.shields.io/badge/Project-Page-4D8DC9)](https://4dqv.mpi-inf.mpg.de/DInfGrid/)
-[![Video](https://img.shields.io/badge/Video-YouTube-FF0000)](#)
+<!--[![Video](https://img.shields.io/badge/Video-YouTube-FF0000)](#)-->
 
 [Navami Kairanda](https://people.mpi-inf.mpg.de/~nkairand/),
 [Shanthika Naik](https://shanthika.github.io/),
