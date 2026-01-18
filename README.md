@@ -1,6 +1,6 @@
 # <em>∂</em><sup>∞</sup>-Grid: A Neural Differential Equation Solver with Differentiable Feature Grids
 
-[![arXiv](https://img.shields.io/badge/arXiv-0000.00000-b31b1b)](https://arxiv.org/abs/0000.00000)
+[![arXiv](https://img.shields.io/badge/arXiv-2601.10715-b31b1b)](https://arxiv.org/abs/2601.10715)
 [![Project Page](https://img.shields.io/badge/Project-Page-4D8DC9)](https://4dqv.mpi-inf.mpg.de/DInfGrid/)
 <!--[![Video](https://img.shields.io/badge/Video-YouTube-FF0000)](#)-->
 
@@ -20,7 +20,7 @@ This repository contains the official implementation of the paper "<em>∂</em><
 *We present a novel differentiable grid-based representation for efficiently solving differential equations (DEs). Widely used architectures for neural solvers, such as sinusoidal neural networks, are coordinate-based MLPs that are, both, computationally intensive and slow to train. Although grid-based alternatives for implicit representations (e.g., Instant-NGP and K-Planes) train faster by exploiting signal structure, their reliance on linear interpolation restricts their ability to compute higher-order derivatives, rendering them unsuitable for solving DEs. In contrast, our approach overcomes these limitations by combining the efficiency of feature grids with radial basis function interpolation, which is infinitely often differentiable. To effectively capture high-frequency solutions and enable stable and faster computation of global gradients, we introduce a multi-resolution decomposition with co-located grids. Our proposed representation, <em>∂</em><sup>∞</sup>-Grid, is trained implicitly using the differential equations as loss functions, enabling accurate modeling of physical fields. We validate <em>∂</em><sup>∞</sup>-Grid on a variety of tasks, including Poisson equation for image reconstruction, the Helmholtz equation for wave fields, and the Kirchhoff-Love boundary value problem for cloth simulation. Our results demonstrate a 5–20x speed-up over coordinate-based MLP-based methods, solving differential equations in seconds or minutes while maintaining comparable accuracy and compactness.*
 
 ## News
-* [1 Jan 2026] We have released the source code.
+* [18 Jan 2026] We have released the source code.
 <!--* [XX.XX.2026] Our paper has been accepted at X!-->
 
 ## Installation
@@ -239,7 +239,7 @@ If you find this work useful for your research, please consider citing:
    title   = {${\partial^\infty}$-Grid: A Neural Differential Equation Solver with Differentiable Feature Grids},
    author  = {Kairanda, Navami and Naik, Shanthika and Habermann, Marc and Sharma, Avinash and Theobalt, Christian and Golyanik, Vladislav},
    year    = {2026},
-   journal = {ArXiv}
+   journal = {arXiv preprint arXiv:2601.10715}
 }
 ```
 
