@@ -1,7 +1,7 @@
 # <em>∂</em><sup>∞</sup>-Grid: A Neural Differential Equation Solver with Differentiable Feature Grids
 
 [![arXiv](https://img.shields.io/badge/arXiv-2601.10715-b31b1b)](https://arxiv.org/abs/2601.10715)
-[![Project Page](https://img.shields.io/badge/Project-Page-4D8DC9)](https://4dqv.mpi-inf.mpg.de/DInfGrid/)
+[![Project Page](https://img.shields.io/badge/Project-Page-4D8DC9)](https://4dqv.mpi-inf.mpg.de/DInf-Grid/)
 <!--[![Video](https://img.shields.io/badge/Video-YouTube-FF0000)](#)-->
 
 [Navami Kairanda](https://people.mpi-inf.mpg.de/~nkairand/),
