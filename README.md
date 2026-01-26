@@ -10,7 +10,7 @@
 [Avinash Sharma](https://3dcomputervision.github.io/index.html),
 [Christian Theobalt](https://people.mpi-inf.mpg.de/~theobalt/),
 [Vladislav Golyanik](https://people.mpi-inf.mpg.de/~golyanik/)  
-Max Planck Institute for Informatics <!-- and collaborators in ICLR 2026-->
+Max Planck Institute for Informatics in ICLR 2026
 
 This repository contains the official implementation of the paper "<em>∂</em><sup>∞</sup>-Grid: Differentiable Grid Representations for Fast and Accurate Solutions to Differential Equations".
 
@@ -21,7 +21,7 @@ This repository contains the official implementation of the paper "<em>∂</em><
 
 ## News
 * [18 Jan 2026] We have released the source code.
-* [26 Jan 2026] Our paper has been accepted at ICLR 2026!-->
+* [26 Jan 2026] Our paper has been accepted at ICLR 2026!
 
 ## Installation
 
