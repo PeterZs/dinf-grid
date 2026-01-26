@@ -10,7 +10,7 @@
 [Avinash Sharma](https://3dcomputervision.github.io/index.html),
 [Christian Theobalt](https://people.mpi-inf.mpg.de/~theobalt/),
 [Vladislav Golyanik](https://people.mpi-inf.mpg.de/~golyanik/)  
-Max Planck Institute for Informatics <!-- and collaborators in ArXiv 2026-->
+Max Planck Institute for Informatics <!-- and collaborators in ICLR 2026-->
 
 This repository contains the official implementation of the paper "<em>∂</em><sup>∞</sup>-Grid: Differentiable Grid Representations for Fast and Accurate Solutions to Differential Equations".
 
@@ -21,7 +21,7 @@ This repository contains the official implementation of the paper "<em>∂</em><
 
 ## News
 * [18 Jan 2026] We have released the source code.
-<!--* [XX.XX.2026] Our paper has been accepted at X!-->
+* [26 Jan 2026] Our paper has been accepted at ICLR 2026!-->
 
 ## Installation
 
@@ -146,8 +146,8 @@ The codebase has the following structure:
 - **`--target_type`** – Target to learn; options: 'linear', 'cubic', 'sinusoidal', 'image', 'helmholtz', 'neuralclothsim', 'sdf', 'advection', 'heat', 'zalesak'.
 - **`--loss_type`** – Type of loss function to use; possible options are: 'signal' when target_type is one of {linear, cubic, sinusoidal, image, sdf}, 'gradient' when target_type is one of {linear, cubic, sinusoidal, image}, 'laplacian' when target_type is one of {linear, cubic, sinusoidal, image}, and 'pde' when target_type is one of {helmholtz, neuralclothsim, advection, heat, zalesak, sdf}.
  - **`--boundary_condition`** – Name of the boundary condition; can be one of no_boundary, neuralclothsim_origin_fixed, neuralclothsim_top_left_fixed, neuralclothsim_top_left_top_right_moved advection_boundary, heat_boundary, or zalesak_boundary.
-- **`--module_type`** – Type of module to use; options: 'siren', 'feature_grid', 'pinn'; our method is 'feature_grid' whereas 'siren' and 'pinn' are baselines/comparisons.
-- **`--interpolation_type`** – Interpolation technique to use for the FeatureGrid module; options: 'lerp', 'rbf'; our method is 'rbf' (radial basis function) whereas 'lerp' (linear interpolation) is a baseline/comparison.
+- **`--module_type`** – Type of module to use; options: 'siren', 'feature_grid', 'pinn'; our method is 'feature_grid', whereas 'siren' and 'pinn' are baselines/comparisons.
+- **`--interpolation_type`** – Interpolation technique to use for the FeatureGrid module; options: 'lerp', 'rbf'; our method is 'rbf' (radial basis function), whereas 'lerp' (linear interpolation) is a baseline/comparison.
 - **`--rbf_type`** – RBF type for RBF interpolation: 'gaussian', 'inverse_quadratic', 'inverse_multiquadric'.
 - **`--neighborhood_ring_size`** – Neighborhood ring size for RBF interpolation.
 - **`--grid_resolution`** – Resolution of the feature grid for the FeatureGrid module.
@@ -167,7 +167,7 @@ The full list of command-line arguments and their defaults can be obtained with 
 
 ### Experiments with PDE objectives
 
-The following table summarises common PDE-style experiments (including gradient and Laplacian objectives), i.e. runs with `loss_type` in `{gradient, laplacian, pde}`.
+The following table summarises common PDE-style experiments (including gradient and Laplacian objectives), i.e., runs with `loss_type` in `{gradient, laplacian, pde}`.
 
 | Task / Equation        | `target_type` | Config file                                                      |
 |------------------------------------|---------------|------------------------------------------------------------------|
@@ -223,9 +223,9 @@ python run.py -c config/mlp_pde_helmholtz.ini -n pinn_pde_helmholtz --module_typ
 
 ## Acknowledgements
 
-This project builds upon the below excellent open source repositories:
+This project builds upon the following excellent open source repositories:
 
-* [Siren](https://github.com/vsitzmann/siren) - An implicit neural representations that leverages periodic (sinusoidal) activation functions.
+* [Siren](https://github.com/vsitzmann/siren) - An implicit neural representation that leverages periodic (sinusoidal) activation functions.
 * [NeuralClothSim](https://github.com/navamikairanda/neuralclothsim) - A quasistatic cloth simulator using thin shells, in which surface deformation is encoded in neural network weights in the form of a neural field.
 
 We thank the authors of these projects.
@@ -239,7 +239,7 @@ If you find this work useful for your research, please consider citing:
    title   = {${\partial^\infty}$-Grid: A Neural Differential Equation Solver with Differentiable Feature Grids},
    author  = {Kairanda, Navami and Naik, Shanthika and Habermann, Marc and Sharma, Avinash and Theobalt, Christian and Golyanik, Vladislav},
    year    = {2026},
-   journal = {arXiv preprint arXiv:2601.10715}
+   journal = {International Conference on Learning Representations}
 }
 ```
 
