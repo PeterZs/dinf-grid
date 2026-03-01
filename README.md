@@ -15,9 +15,7 @@ Max Planck Institute for Informatics in ICLR 2026
 This repository contains the official implementation of the paper "<em>∂</em><sup>∞</sup>-Grid: Differentiable Grid Representations for Fast and Accurate Solutions to Differential Equations".
 
 <!-- Video/Teaser -->
-<video width="500" autoplay controls muted loop preload="metadata">
-  <source src="https://4dqv.mpi-inf.mpg.de/DInf-Grid/static/videos/teaser_animated_2.mp4" type="video/mp4">
-</video>
+<img src="assets/teaser.gif" alt="Teaser animation" width="500" />
 
 ## What is <em>∂</em><sup>∞</sup>-Grid?
 *We present a novel differentiable grid-based representation for efficiently solving differential equations (DEs). Widely used architectures for neural solvers, such as sinusoidal neural networks, are coordinate-based MLPs that are, both, computationally intensive and slow to train. Although grid-based alternatives for implicit representations (e.g., Instant-NGP and K-Planes) train faster by exploiting signal structure, their reliance on linear interpolation restricts their ability to compute higher-order derivatives, rendering them unsuitable for solving DEs. In contrast, our approach overcomes these limitations by combining the efficiency of feature grids with radial basis function interpolation, which is infinitely often differentiable. To effectively capture high-frequency solutions and enable stable and faster computation of global gradients, we introduce a multi-resolution decomposition with co-located grids. Our proposed representation, <em>∂</em><sup>∞</sup>-Grid, is trained implicitly using the differential equations as loss functions, enabling accurate modeling of physical fields. We validate <em>∂</em><sup>∞</sup>-Grid on a variety of tasks, including Poisson equation for image reconstruction, the Helmholtz equation for wave fields, and the Kirchhoff-Love boundary value problem for cloth simulation. Our results demonstrate a 5–20x speed-up over coordinate-based MLP-based methods, solving differential equations in seconds or minutes while maintaining comparable accuracy and compactness.*
